@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt</title>
+    <style>
+            body {
+              font-family: Arial;
+            }
+            
+            div {
+              box-sizing: border-box;
+            }
+            
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid lightgray;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+            
+            input[type=submit] {
+              background-color: rgb(214, 156, 47);
+              color: rgb(223, 194, 194);
+              padding: 12px 20px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+              background-color: #ee9696;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: #ee9696;
+              padding: 10px;
+              color: rgb(94, 70, 10);
+            }
+            
+            .column {
+              float: left;
+              width: 50%;
+              margin-top: 6px;
+              padding: 20px;
+            }
+            p {
+                text-align: center;
+            }
+            #broj {
+                margin-top: 100px;
+            }
+            </style>
+            </head>
+            <body>
+                              
+            <div class="container">
+              <div style="text-align:center">
+                <h2>Contact us</h2>
+                <p>You can leave us a message here</p>
+              </div>
+              <div>
+                <div class="column">
+                  <img src="kontakt_slika1.jpg" style="width:100%">
+                  <p id="broj">Phone number: 067/111/1118 <br>
+                     Email: lois@gmail.com </p>
+                  <p> <a href="index.html"> Back to profile</a> </p>
+               
+                </div>
+                <div class="column">
+                  <form action="/contact.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Leave your message here" style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            </body>
+            </html>
